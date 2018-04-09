@@ -27,8 +27,8 @@
    </div>
 
    <div class="container">
-     <% @articles.each do |article| %>
      <div class="card-columns">
+       <% @articles.each do |article| %>
        <div class="card">
          <div class="card-body">
            <h5 class="card-title"><%= article.name %></h5>
@@ -36,6 +36,6 @@
          </div>
          <p class="assurances lecture"><%= link_to 'Show', article %></p>
        </div>
+       <% end %>
     </div>
-    <% end %>
     </div>
