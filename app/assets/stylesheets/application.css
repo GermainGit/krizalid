@@ -33,12 +33,22 @@
    }
  }
 
+a:hover {
+  text-decoration:none;
+}
+
  .topbar {
    color:#fff;
  }
 
  .topbar a {
    color:#fff;
+ }
+
+ .topbar a:hover {
+   color:#ccc;
+   text-decoration:none;
+   background-color:none;
  }
 
  .container {
@@ -127,10 +137,6 @@
  color: white;
  font-size: 1.5em;
  font-family: Muli;
- }
-
- .lecture:hover {
-   text-decoration:none;
  }
 
  .border-top { border-top: 1px solid #e5e5e5; }
