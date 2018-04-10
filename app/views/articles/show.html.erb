@@ -19,8 +19,11 @@
            <p class="card-text-excerpt"><%= @article.excerpt %></p>
            <p class="card-text-article"><%= @article.text %></p>
          </div>
+         <% if user_signed_in?%>
            <div class="edit">
          <%= link_to 'Edit', edit_article_path(@article) %>
+         <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, class: 'btn btn-default btn-xs'%>
            </div>
+           <% end %>
        </div>
     </div>
