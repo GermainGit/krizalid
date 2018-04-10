@@ -10,7 +10,7 @@
   <%= link_to new_article_path do %>
        <%= content_tag :div, "Nouvel article", :class => "btn btn-outline-warning" %>
       <% end %>
-    <%= link_to destroy_user_session_path do %>
+    <%= link_to destroy_user_session_path, method: :delete do %>
        <%= content_tag :div, "Déconnexion", :class => "btn btn-outline-danger" %>
       <% end %>
 <% end %>
