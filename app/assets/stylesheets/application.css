@@ -35,6 +35,7 @@
 
 a:hover {
   text-decoration:none;
+  background:none;
 }
 
  .topbar {
@@ -46,7 +47,6 @@ a:hover {
  }
 
  .topbar a:hover {
-   color:#ccc;
    text-decoration:none;
    background-color:none;
  }
