@@ -4,14 +4,16 @@
    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
      <div class="mr-md-auto logo"></div>
      <nav class="my-2 my-md-0 mr-md-3">
+      <% if user_signed_in=false %>
        <a href="users/sign_in"><button type="button" class="btn btn-outline-light">Espace utilisateur</button></a>
+       <% end %>
      </nav>
   <% if user_signed_in? %>
+  <%= link_to new_article_path do %>
+       <%= content_tag :div, "Nouvel article", :class => "btn btn-outline-warning" %>
+      <% end %>
     <%= link_to destroy_user_session_path do %>
        <%= content_tag :div, "Déconnexion", :class => "btn btn-outline-danger" %>
-      <% end %>
-    <%= link_to new_article_path do %>
-       <%= content_tag :div, "Nouvel article", :class => "btn btn-outline-warning" %>
       <% end %>
 <% end %>
    </div>

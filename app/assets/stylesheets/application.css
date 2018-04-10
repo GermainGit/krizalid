@@ -176,3 +176,7 @@ a:hover {
 .sr-only {
   position:relative;
 }
+
+.btn-outline-warning {
+  margin-right:20px;
+}
