@@ -14,11 +14,11 @@
 
   <form class="form-signin">
   <label class="sr-only">Titre</label>
-  <%= form.text_field :name, id: :article_name, :placeholder => "Titre de l'article" %><br>
+  <%= form.text_field :name, id: :article_name, %><br>
   <label class="sr-only">Chapo</label>
-  <%= form.text_area :excerpt, id: :article_excerpt, :placeholder => "Résumé" %><br>
+  <%= form.text_area :excerpt, id: :article_excerpt %><br>
   <label class="sr-only">Texte</label>
-  <%= form.text_area :text, id: :article_text, :placeholder => "Texte" %>
+  <%= form.text_area :text, id: :article_text %>
   <%= form.submit %>
        <%= content_tag :button, "Lire ⇾", :class => "btn btn-lg btn-primary btn-block" %>
       <% end %>
