@@ -1,11 +1,21 @@
 <p id="notice"><%= notice %></p>
+         <% if user_signed_in? %>
+  <li>
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+  </li>
+<% end %>
 
    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
      <div class="mr-md-auto logo"></div>
      <nav class="my-2 my-md-0 mr-md-3">
        Bonjour, Gilbert
+
      </nav>
-     <%= link_to 'New Article', new_article_path %>
+  <% if user_signed_in? %>
+  <li>
+  <%= link_to 'New Article', new_article_path %>
+  </li>
+<% end %>
    </div>
 
    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
