@@ -1,0 +1,16 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
+  <div class="mr-md-auto logo"></div>
+  <nav class="my-2 my-md-0 mr-md-3">
+    Bonjour, Gilbert
+  </nav>
+  <%= link_to 'Back', articles_path %>
+</div>
+
+<div class="container">
+    <div class="card article">
+      <p class="travail titre">Nouvel article</p>
+      <div class="card-body">
+        <%= render 'form', article: @article %>
+      </div>
+    </div>
+ </div>

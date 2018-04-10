@@ -1,0 +1,174 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html {
+   font-size: 14px;
+ }
+
+ body {
+   background-color: #2B3351;
+   font-family:Muli;
+ }
+
+ p {
+   margin-bottom: 0;
+ }
+
+ @media (min-width: 768px) {
+   html {
+     font-size: 16px;
+   }
+ }
+
+a:hover {
+  text-decoration:none;
+  background:none;
+}
+
+ .topbar {
+   color:#fff;
+ }
+
+ .topbar a {
+   color:#fff;
+ }
+
+ .topbar a:hover {
+   text-decoration:none;
+   background-color:none;
+ }
+
+ .container {
+   max-width: 90%;
+   margin-bottom:100px;
+ }
+
+ .pricing-header {
+   max-width: 700px;
+ }
+
+ .card-deck .card {
+   min-width: 220px;
+ }
+
+ .card {
+   border:none;
+   border-radius:25px;
+ }
+
+ .btn-outline-primary {
+ border:none;
+ padding:15px;
+ text-transform: uppercase;
+ margin-right:10px;
+ }
+
+ .assurances {
+   background: linear-gradient(to right, #73E2D5 , #6783DC);
+   transition:0.3s;
+ }
+
+ .assurances:hover {
+   filter:saturate(200%);transition:0.3s;
+ }
+
+ .quotidien {
+   background: linear-gradient(to right, #08AEEA , #2AF598);
+   transition:0.3s;
+ }
+
+ .quotidien:hover {
+   filter:saturate(200%);transition:0.3s;
+ }
+
+ .finances {
+   background: linear-gradient(to right, #558E5E , #00E8BB);
+   transition:0.3s;
+ }
+
+ .finances:hover {
+   filter:saturate(200%);transition:0.3s;
+ }
+
+ .travail {
+   background: linear-gradient(to right, #F7CE68 , #FBAB7E);
+   transition:0.3s;
+ }
+
+ .travail:hover {
+   filter:saturate(200%);transition:0.3s;
+ }
+
+ .etudes {
+   background: linear-gradient(to right, #FF65A5 , #DC7A5E);
+   transition:0.3s;
+ }
+
+ .etudes:hover {
+   filter:saturate(200%);transition:0.3s;
+ }
+
+
+ .logement {
+   background: linear-gradient(to right, #8EC5FC , #E0C3FC);
+   transition:0.3s;
+ }
+
+ .logement:hover {
+   filter:saturate(200%);transition:0.3s;
+ }
+
+ .lecture {
+ padding: 20px;
+ border-radius: 0 0 25px 25px;
+ color: white;
+ font-size: 1.5em;
+ font-family: Muli;
+ }
+
+ .border-top { border-top: 1px solid #e5e5e5; }
+ .border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+ .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+ .logo {
+   background-image: url(https://i.imgur.com/uegILMH.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width:432px;
+   height:165px;
+   transition:0.3s;
+ }
+
+ .logo:hover {
+   opacity:0.5;
+   transition:0.3s;
+ }
+
+ .article {
+   box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+ }
+
+ .titre {
+   border-radius: 25px 25px 0 0;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  font-family: Muli;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 17px;
+ }

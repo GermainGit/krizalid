@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+         <% if user_signed_in? %>
+  <li>
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+  </li>
+<% end %>
+
+   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
+     <div class="mr-md-auto logo"></div>
+     <nav class="my-2 my-md-0 mr-md-3">
+       Bonjour, Gilbert
+
+     </nav>
+  <% if user_signed_in? %>
+  <li>
+  <%= link_to 'New Article', new_article_path %>
+  </li>
+<% end %>
+   </div>
+
+   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
+     <h5 class="my-0 mr-md-auto font-weight-normal">Catégories</h5>
+     <nav class="my-2 my-md-0 mr-md-3">
+       <a class="p-2" href="#">Rechercher...</a>
+     </nav>
+   </div>
+
+   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
+     <nav class="my-2 my-md-0 mr-md-3">
+     <a class="btn btn-outline-primary logement top-btt" href="#">Logement</a>
+     <a class="btn btn-outline-primary etudes top-btt" href="#">Etudes</a>
+     <a class="btn btn-outline-primary travail top-btt" href="#">Travail</a>
+     <a class="btn btn-outline-primary finances top-btt" href="#">Finances</a>
+     <a class="btn btn-outline-primary quotidien top-btt" href="#">Quotidien</a>
+     <a class="btn btn-outline-primary assurances top-btt" href="#">Assurances</a>
+     </nav>
+   </div>
+
+   <div class="container">
+     <% @articles.each do |article| %>
+     <div class="card-columns">
+       <div class="card">
+         <div class="card-body">
+           <h5 class="card-title"><%= article.name %></h5>
+           <p class="card-text"><%= article.excerpt %></p>
+         </div>
+         <p class="assurances lecture"><%= link_to 'Show', article %></p>
+       </div>
+    </div>
+    <% end %>
+    </div>
