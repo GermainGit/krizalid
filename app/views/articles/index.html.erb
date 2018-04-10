@@ -4,15 +4,19 @@
    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
      <div class="mr-md-auto logo"></div>
      <nav class="my-2 my-md-0 mr-md-3">
-       Bonjour,
 
+      <% unless user_signed_in? %>
+       <a href="users/sign_in"><button type="button" class="btn btn-outline-light">Espace utilisateur</button></a>
+       <% end %>
      </nav>
+  <% if user_signed_in? %>
+  <%= link_to new_article_path do %>
+       <%= content_tag :div, "Nouvel article", :class => "btn btn-outline-warning" %>
+      <% end %>
+    <%= link_to destroy_user_session_path, method: :delete do %>
+       <%= content_tag :div, "Déconnexion", :class => "btn btn-outline-danger" %>
+      <% end %>
 
-  <% if user_signed_in?%>
-  <li>
-    <ul><%= link_to('Logout', destroy_user_session_path, method: :delete) %></ul>
-    <ul><%= link_to 'New Article', new_article_path %></ul>
-</li>
 <% end %>
    </div>
 
@@ -42,10 +46,9 @@
            <p class="card-text"><%= article.excerpt %></p>
          </div>
          <%= link_to article do %>
-       <%= content_tag :p, "Lire ⇾", :class => "quotidien lecture" %>
+       <%= content_tag :p, "Lire ⇾", :class => "travail lecture" %>
       <% end %>
        </div>
     <% end %>
     </div>
     </div>
-

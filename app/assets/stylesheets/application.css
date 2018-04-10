@@ -176,3 +176,46 @@ a:hover {
 .sr-only {
   position:relative;
 }
+
+.btn-outline-warning {
+  margin-right:20px;
+}
+.card-title-article{
+  color: #434f74;
+  font-size: 113px;
+  text-align: center;
+ }
+
+ .assurances.titre{
+  font-size: 25px;
+ }
+
+.card-text-excerpt{
+  color: #434f74;
+  font-size: 37px;
+  text-align: center;
+  margin-top: 35px;
+  line-height: 40px;
+}
+
+.card-text-article {
+  color: #434f74;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 25px;
+}
+.edit a{
+  color: #434f74;
+  margin-left: 1.25rem;
+}
+path{
+  color: #434f74;
+}
+
+.image a{
+  display: block;
+  position: absolute;
+  left: 95%;
+  top: 15%;
+  font-size: 50px;
+}
