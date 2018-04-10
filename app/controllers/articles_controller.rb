@@ -14,18 +14,21 @@ class ArticlesController < ApplicationController
 
   # GET /articles/new
   def new
+    if user_signed_in?
     @article = Article.new
+    end
   end
 
   # GET /articles/1/edit
   def edit
   end
 
+
   # POST /articles
   # POST /articles.json
   def create
+    if user_signed_in?
     @article = Article.new(article_params)
-
     respond_to do |format|
       if @article.save
         format.html { redirect_to @article, notice: 'Article was successfully created.' }
@@ -35,6 +38,8 @@ class ArticlesController < ApplicationController
         format.json { render json: @article.errors, status: :unprocessable_entity }
       end
     end
+    end
+
   end
 
   # PATCH/PUT /articles/1
@@ -54,10 +59,13 @@ class ArticlesController < ApplicationController
   # DELETE /articles/1
   # DELETE /articles/1.json
   def destroy
-    @article.destroy
-    respond_to do |format|
-      format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
-      format.json { head :no_content }
+    if user_signed_in?
+       @article.destroy
+       respond_to do |format|
+       format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
+       format.json { head :no_content }
+    end
+
     end
   end
 
