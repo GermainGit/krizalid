@@ -2,7 +2,7 @@
    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
      <div class="mr-md-auto logo"></div>
      <nav class="my-2 my-md-0 mr-md-3">
-        
+
      </nav>
      <%= link_to 'Back', articles_path %>
    </div>
@@ -13,6 +13,9 @@
            <h5 class="card-title"><%= @article.name %></h5>
            <p class="card-text"><%= @article.text %></p>
          </div>
+         <% if user_signed_in? %>
          <%= link_to 'Edit', edit_article_path(@article) %>
+         <%= link_to 'Supprimer', @article.destroy %>
+         <% end %>
        </div>
     </div>
