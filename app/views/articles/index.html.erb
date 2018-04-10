@@ -34,7 +34,7 @@
            <h5 class="card-title"><%= article.name %></h5>
            <p class="card-text"><%= article.excerpt %></p>
          </div>
-         <p><%= link_to 'Show', article, :class => "assurances lecture" %></p>
+         <%= link_to article %><p class="assurances lecture">Lire ➔</p><% end %>
        </div>
        <% end %>
     </div>
