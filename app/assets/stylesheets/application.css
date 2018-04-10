@@ -20,6 +20,7 @@
 
  body {
    background-color: #2B3351;
+   font-family:Muli;
  }
 
  p {
@@ -32,6 +33,11 @@
    }
  }
 
+a:hover {
+  text-decoration:none;
+  background:none;
+}
+
  .topbar {
    color:#fff;
  }
@@ -40,8 +46,13 @@
    color:#fff;
  }
 
+ .topbar a:hover {
+   text-decoration:none;
+   background-color:none;
+ }
+
  .container {
-   max-width: 100%;
+   max-width: 90%;
    margin-bottom:100px;
  }
 
@@ -55,6 +66,7 @@
 
  .card {
    border:none;
+   border-radius:25px;
  }
 
  .btn-outline-primary {
@@ -70,7 +82,7 @@
  }
 
  .assurances:hover {
-   filter:saturate(200%);transition:0.3s;box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   filter:saturate(200%);transition:0.3s;
  }
 
  .quotidien {
@@ -79,7 +91,7 @@
  }
 
  .quotidien:hover {
-   filter:saturate(200%);transition:0.3s;box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   filter:saturate(200%);transition:0.3s;
  }
 
  .finances {
@@ -88,7 +100,7 @@
  }
 
  .finances:hover {
-   filter:saturate(200%);transition:0.3s;box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   filter:saturate(200%);transition:0.3s;
  }
 
  .travail {
@@ -97,7 +109,7 @@
  }
 
  .travail:hover {
-   filter:saturate(200%);transition:0.3s;box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   filter:saturate(200%);transition:0.3s;
  }
 
  .etudes {
@@ -106,7 +118,7 @@
  }
 
  .etudes:hover {
-   filter:saturate(200%);transition:0.3s;box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   filter:saturate(200%);transition:0.3s;
  }
 
 
@@ -116,15 +128,15 @@
  }
 
  .logement:hover {
-   filter:saturate(200%);transition:0.3s;box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   filter:saturate(200%);transition:0.3s;
  }
 
  .lecture {
  padding: 20px;
- border-radius: 0 0 .25rem .25rem;
- font-weight: bold;
+ border-radius: 0 0 25px 25px;
  color: white;
  font-size: 1.5em;
+ font-family: Muli;
  }
 
  .border-top { border-top: 1px solid #e5e5e5; }
@@ -144,4 +156,19 @@
  .logo:hover {
    opacity:0.5;
    transition:0.3s;
+ }
+
+ .article {
+   box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+ }
+
+ .titre {
+   border-radius: 25px 25px 0 0;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  font-family: Muli;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 17px;
  }
