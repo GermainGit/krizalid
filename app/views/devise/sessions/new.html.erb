@@ -1,19 +1,17 @@
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
+ <form class="form-signin">
+  <label class="sr-only">E-mail</label>
+  <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => "E-mail" %><br>
+  <label class="sr-only">Mot de passe</label>
+  <%= f.password_field :password, autocomplete: "off", :placeholder => "Mot de passe" %><br>
+  <%= f.submit "Log in" %>
+  </form>
 
 <%= render "devise/shared/links" %>
+
+
+
+
+
