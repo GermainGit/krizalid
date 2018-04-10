@@ -13,9 +13,7 @@
            <h5 class="card-title"><%= @article.name %></h5>
            <p class="card-text"><%= @article.text %></p>
          </div>
-         <% if user_signed_in? %>
          <%= link_to 'Edit', edit_article_path(@article) %>
          <%= link_to 'Supprimer', @article.destroy %>
-         <% end %>
        </div>
     </div>
