@@ -11,22 +11,15 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :article_name %>
-  </div>
 
-  <div class="field">
-    <%= form.label :excerpt %>
-    <%= form.text_area :excerpt, id: :article_excerpt %>
-  </div>
+  <form class="form-signin">
+  <label class="sr-only"><%= form.label :name %></label>
+  <%= form.text_field :name, id: :article_name %><br>
+  <label class="sr-only"><%= form.label :excerpt %></label>
+  <%= form.text_area :excerpt, id: :article_excerpt %><br>
+  <label class="sr-only"><%= form.label :text %></label>
+  <%= form.text_area :text, id: :article_text %>
+  <button class="btn btn-lg btn-primary btn-block" type="submit"><%= form.submit %></button>
+  </form>
 
-  <div class="field">
-    <%= form.label :text %>
-    <%= form.text_area :text, id: :article_text %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
 <% end %>

@@ -20,6 +20,7 @@
 
  body {
    background-color: #2B3351;
+   font-family:Muli;
  }
 
  p {
@@ -41,7 +42,7 @@
  }
 
  .container {
-   max-width: 100%;
+   max-width: 90%;
    margin-bottom:100px;
  }
 
@@ -55,6 +56,7 @@
 
  .card {
    border:none;
+   border-radius:25px;
  }
 
  .btn-outline-primary {
@@ -70,7 +72,7 @@
  }
 
  .assurances:hover {
-   filter:saturate(200%);transition:0.3s;box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   filter:saturate(200%);transition:0.3s;
  }
 
  .quotidien {
@@ -79,7 +81,7 @@
  }
 
  .quotidien:hover {
-   filter:saturate(200%);transition:0.3s;box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   filter:saturate(200%);transition:0.3s;
  }
 
  .finances {
@@ -88,7 +90,7 @@
  }
 
  .finances:hover {
-   filter:saturate(200%);transition:0.3s;box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   filter:saturate(200%);transition:0.3s;
  }
 
  .travail {
@@ -97,7 +99,7 @@
  }
 
  .travail:hover {
-   filter:saturate(200%);transition:0.3s;box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   filter:saturate(200%);transition:0.3s;
  }
 
  .etudes {
@@ -106,7 +108,7 @@
  }
 
  .etudes:hover {
-   filter:saturate(200%);transition:0.3s;box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   filter:saturate(200%);transition:0.3s;
  }
 
 
@@ -116,12 +118,12 @@
  }
 
  .logement:hover {
-   filter:saturate(200%);transition:0.3s;box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   filter:saturate(200%);transition:0.3s;
  }
 
  .lecture {
  padding: 20px;
- border-radius: 0 0 .25rem .25rem;
+ border-radius: 0 0 25px 25px;
  font-weight: bold;
  color: white;
  font-size: 1.5em;
@@ -133,7 +135,7 @@
  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
  .logo {
-   background-image: url(https://i.imgur.com/uegILMH.png);
+   background-image: url(../images/logo.png);
    background-repeat: no-repeat;
    background-size: cover;
    width:432px;
@@ -144,4 +146,16 @@
  .logo:hover {
    opacity:0.5;
    transition:0.3s;
+ }
+
+ .article {
+   box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+ }
+
+ .titre {
+   border-radius: 25px 25px 0 0;
+   color:white;
+   font-size:20px;
+   text-align:center;
+   padding:5px;
  }
