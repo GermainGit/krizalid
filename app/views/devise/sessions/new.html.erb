@@ -1,13 +1,26 @@
-<h2>Log in</h2>
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
+  <div class="mr-md-auto logo"></div>
+  <nav class="my-2 my-md-0 mr-md-3">
+    Bonjour, Gilbert
+  </nav>
+  <%= link_to 'Back', articles_path %>
+</div>
 
+<div class="container">
+    <div class="card article">
+      <p class="travail titre">Nouvel article</p>
+      <div class="card-body">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
  <form class="form-signin">
   <label class="sr-only">E-mail</label>
-  <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => "E-mail" %><br>
+  <%= f.email_field :email, autofocus: true, autocomplete: "email" %><br>
   <label class="sr-only">Mot de passe</label>
-  <%= f.password_field :password, autocomplete: "off", :placeholder => "Mot de passe" %><br>
+  <%= f.password_field :password, autocomplete: "off" %><br>
   <%= f.submit "Log in" %>
   </form>
+</div>
+    </div>
+ </div>
 
 <%= render "devise/shared/links" %>
 
