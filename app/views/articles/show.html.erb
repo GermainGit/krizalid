@@ -16,5 +16,8 @@
          <% if user_signed_in? %>
          <%= link_to 'Edit', edit_article_path(@article) %>
          <% end %>
+         <% if user_signed_in? %>
+         <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Etes-vous sur de le supprimer ?' }, class: 'btn btn-default btn-xs' %>
+          <% end %>
        </div>
     </div>
