@@ -4,10 +4,11 @@
    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
      <div class="mr-md-auto logo"></div>
      <nav class="my-2 my-md-0 mr-md-3">
-       Bonjour, Gilbert
+       Bonjour,
 
      </nav>
-  <% if user_signed_in? %>
+
+  <% if user_signed_in?%>
   <li>
     <ul><%= link_to('Logout', destroy_user_session_path, method: :delete) %></ul>
     <ul><%= link_to 'New Article', new_article_path %></ul>
