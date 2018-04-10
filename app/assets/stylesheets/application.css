@@ -52,7 +52,7 @@ a:hover {
  }
 
  .container {
-   max-width: 90%;
+   max-width: 99%;
    margin-bottom:100px;
  }
 
@@ -172,3 +172,7 @@ a:hover {
   text-transform: uppercase;
   padding: 17px;
  }
+
+.sr-only {
+  position:relative;
+}
