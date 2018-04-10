@@ -172,3 +172,7 @@ a:hover {
   text-transform: uppercase;
   padding: 17px;
  }
+
+.sr-only {
+  position:relative;
+}
