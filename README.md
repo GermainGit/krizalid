@@ -28,6 +28,10 @@ Première retouche front de notre app (Bootstrap 4)
 
 Nous allons créer une interface admin pour publier nos articles.
 
-$ rails g scaffold User name:string password:string
-$ rails c
-$ User.create name: "xxx", password: "xxx"
+Install de la gem : devise
+
+$ rails g devise:install  # Permet de générer la configuration
+$ rails g devise:views    # Permet d'importer les vues
+$ rails g devise User     # Permet de générer le model et les migrations pour le model User
+
+La fonction sign_up est desactivé, il est désormais possible de se connecter pour pouvoir publier des articles, les editers ou les supprimer.
