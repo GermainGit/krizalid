@@ -74,6 +74,13 @@ a:hover {
   padding:1.25rem;
  }
 
+.card-body p {
+  color: #434f74;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px;
+    text-align: justify;
+}
  .btn-outline-primary {
  border:none;
  padding:15px;
