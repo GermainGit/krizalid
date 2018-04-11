@@ -53,7 +53,7 @@
          <% if user_signed_in?%>
            <div class="edit">
          <%= link_to 'Edit', edit_article_path(@article) %>
-         <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, class: 'btn btn-default btn-xs'%>
+         <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, :class => "btn btn-secondary" %>
            </div>
            <% end %>
        </div>
