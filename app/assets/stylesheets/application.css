@@ -269,7 +269,7 @@ body {
 
 .card-title-article {
     font-size: 30px;
-    line-height: 0px;
+    line-height: 40px;
 }
 
 .card-body {
@@ -277,7 +277,7 @@ body {
 }
 
 .card-text-article {
-  margin:20px;
+  margin:10px;
 }
 
 }
