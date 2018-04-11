@@ -74,6 +74,10 @@ a:hover {
   padding:1.25rem;
  }
 
+ .top-btt:hover {
+  filter:saturate(200%);
+ }
+
  .btn-outline-primary {
  border:none;
  padding:15px;
@@ -240,6 +244,12 @@ path{
     background-repeat: no-repeat;
     background-position: right;
 }
+
+.top-btt {
+  padding: 10px;
+  margin-right: 15px;
+}
+
 
 @media (min-width: 576px) {
 .card-columns {
