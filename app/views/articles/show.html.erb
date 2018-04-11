@@ -52,8 +52,8 @@
          </div>
          <% if user_signed_in?%>
            <div class="edit">
-         <%= link_to 'Modifier', edit_article_path(@article), :class => "btn btn-secondary", :style=>'color:#FFFFFF;' %>
-         <%= link_to 'Supprimer', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, :class => "btn btn-danger", :style=>'color:#FFFFFF;' %>
+         <%= link_to 'Modifier', edit_article_path(@article), :class => "btn btn-secondary", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
+         <%= link_to 'Supprimer', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, :class => "btn btn-danger", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
            </div>
            <% end %>
        </div>
