@@ -69,6 +69,10 @@ a:hover {
    border-radius:25px;
  }
 
+ .card-body {
+  padding:0 1.25rem 1.25rem 1.25rem;
+ }
+
  .btn-outline-primary {
  border:none;
  padding:15px;
@@ -165,7 +169,7 @@ a:hover {
   font-family: Muli;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 17px;
+  padding: 12px;
  }
 
 .sr-only {
@@ -188,7 +192,7 @@ a:hover {
     line-height: 90px;
 }
  .assurances.titre{
-  font-size: 25px;
+  font-size: 18px;
  }
 
 .card-text-excerpt {
@@ -229,7 +233,7 @@ path{
 .cross {
     margin-top: 30px;
     margin-right: 30px;
-    height: 40px;
+    height: 35px;
     background-image: url(https://i.imgur.com/fS35bSv.png);
     background-size: contain;
     background-repeat: no-repeat;
