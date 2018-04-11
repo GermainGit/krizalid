@@ -74,6 +74,18 @@ a:hover {
   padding:1.25rem;
  }
 
+.body-article p {
+  color: #434f74!important;
+  font-size:17px;
+  font-family:Muli;
+}
+
+.body-article img {
+  border: solid #ebebeb 10px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
  .btn-outline-primary {
  border:none;
  padding:15px;
@@ -150,16 +162,20 @@ a:hover {
  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
  .logo {
-   background-image: url(https://i.imgur.com/BzeLkyp.png);
+   background-image: url(https://i.imgur.com/HFXsZt8.png);
    background-repeat: no-repeat;
    background-size:cover;
-   width:238px;
+   width:241px;
    height:90px;
  }
 
  .article {
    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
    margin-top:50px;
+ }
+
+ .body-article {
+  padding:0 5rem 5rem 5rem;
  }
 
  .titre {
@@ -186,7 +202,7 @@ a:hover {
     font-size: 70px;
     margin-bottom: 50px;
     font-weight: bold;
-    max-width: 60%;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -278,10 +294,12 @@ path{
 
 @media (max-width: 726px) {
 body {
-    margin:0;
+    margin:10px;
 
   }
-
+.body-article {
+  padding:10px;
+ }
 .top-btt {
   margin-bottom:15px;
 }
