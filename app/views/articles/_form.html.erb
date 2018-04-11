@@ -15,13 +15,16 @@
   <form class="form-signin">
   <label class="sr-only">Titre</label>
   <%= form.text_field :name, id: :article_name, :placeholder => "Titre de l'article" %><br>
+  <div class="field">
+  <%= form.label :category_id %>
+  <%= form.collection_select :category_id, Category.all, :id, :name %>
+  </div>
   <label class="sr-only">Chapo</label>
   <%= form.text_area :excerpt, id: :article_excerpt, :placeholder => "Résumé" %><br>
   <label class="sr-only">Texte</label>
   <%= form.text_area :text, :class => "tinymce", :placeholder => "Texte"%>
   <%= form.submit %>
   </form>
-
 <% end %>
 <%= tinymce %>
 
