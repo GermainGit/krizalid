@@ -18,9 +18,11 @@
   <label class="sr-only">Chapo</label>
   <%= form.text_area :excerpt, id: :article_excerpt, :placeholder => "Résumé" %><br>
   <label class="sr-only">Texte</label>
-  <%= form.text_area :text, id: :article_text, :placeholder => "Texte" %>
+  <%= form.text_area :text, :class => "tinymce", :placeholder => "Texte"%>
   <%= form.submit %>
   </form>
 
 <% end %>
+<%= tinymce %>
+
 
