@@ -69,6 +69,10 @@ a:hover {
    border-radius:25px;
  }
 
+ .card a:hover {
+  color:none;
+ }
+
  .card-body {
   padding:1.25rem;
  }

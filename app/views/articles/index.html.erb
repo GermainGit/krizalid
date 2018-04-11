@@ -39,6 +39,7 @@
    <div class="container">
      <div class="card-columns">
       <% @articles.each do |article| %>
+      <%= link_to article do %>
        <div class="card">
          <div class="card-body">
            <h5 class="card-title"><%= article.name %></h5>
@@ -48,6 +49,7 @@
        <%= content_tag :p, "Lire ⇾", :class => "travail lecture" %>
       <% end %>
        </div>
+       <% end %>
     <% end %>
     </div>
     </div>
