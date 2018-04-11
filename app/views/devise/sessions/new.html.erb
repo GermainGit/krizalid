@@ -1,20 +1,50 @@
-<h2>Log in</h2>
+   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
+     <div class="mr-md-auto logo"></div>
+     <nav class="my-2 my-md-0 mr-md-3">
+
+      <% unless user_signed_in? %>
+       <a href="//krizalid.herokuapp.com"><button type="button" class="btn btn-outline-light">Retour à l'accueil</button></a>
+       <% end %>
+     </nav>
+  <% if user_signed_in? %>
+  <%= link_to new_article_path do %>
+       <%= content_tag :div, "Nouvel article", :class => "btn btn-outline-warning" %>
+      <% end %>
+    <%= link_to destroy_user_session_path, method: :delete do %>
+       <%= content_tag :div, "Déconnexion", :class => "btn btn-outline-danger" %>
+      <% end %>
+
+<% end %>
+   </div>
+
+   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
+     <h5 class="my-0 mr-md-auto font-weight-bold" style="font-size:30px;">Catégories</h5>
+     <nav class="my-2 my-md-0 mr-md-3">
+     </nav>
+   </div>
+
+   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
+     <nav class="my-2 my-md-0 mr-md-3">
+     <a class="btn btn-outline-primary logement top-btt" href="#">Logement</a>
+     <a class="btn btn-outline-primary etudes top-btt" href="#">Etudes</a>
+     <a class="btn btn-outline-primary travail top-btt" href="#">Travail</a>
+     <a class="btn btn-outline-primary finances top-btt" href="#">Finances</a>
+     <a class="btn btn-outline-primary quotidien top-btt" href="#">Quotidien</a>
+     <a class="btn btn-outline-primary assurances top-btt" href="#">Assurances</a>
+     </nav>
+   </div>
+
+   <div class="container">
+     <h2 style="color:white;">Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
-
+<form class="form-signin">
+  <label class="sr-only">E-mail</label>
+  <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => "E-mail" %><br>
+  <label class="sr-only">Password</label>
+  <%= f.password_field :password, autocomplete: "off", :placeholder => "Mot de passe" %><br>
+  <%= f.submit "Log in" %>
+  </form>
+  <% end %>
+    </div>
+    <%= render "devise/shared/links" %>

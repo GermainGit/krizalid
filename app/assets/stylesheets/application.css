@@ -145,21 +145,15 @@ a:hover {
  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
  .logo {
-   background-image: url(https://i.imgur.com/uegILMH.png);
+   background-image: url(https://i.imgur.com/BzeLkyp.png);
    background-repeat: no-repeat;
-   background-size: cover;
-   width:432px;
+   width:431px;
    height:165px;
-   transition:0.3s;
- }
-
- .logo:hover {
-   opacity:0.5;
-   transition:0.3s;
  }
 
  .article {
    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   margin-top:50px;
  }
 
  .titre {
@@ -180,29 +174,35 @@ a:hover {
 .btn-outline-warning {
   margin-right:20px;
 }
-.card-title-article{
-  color: #434f74;
-  font-size: 113px;
-  text-align: center;
- }
+.card-title-article {
+    color: #434f74;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
 
  .assurances.titre{
   font-size: 25px;
  }
 
-.card-text-excerpt{
-  color: #434f74;
-  font-size: 37px;
-  text-align: center;
-  margin-top: 35px;
-  line-height: 40px;
+.card-text-excerpt {
+    color: #434f74;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px;
+    margin-top: 35px;
+    line-height: 30px;
+    font-weight: 600;
+    font-style: italic;
 }
 
 .card-text-article {
-  color: #434f74;
-  font-size: 20px;
-  margin-top: 20px;
-  line-height: 25px;
+    color: #434f74;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px;
 }
 .edit a{
   color: #434f74;

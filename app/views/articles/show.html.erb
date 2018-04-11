@@ -1,11 +1,24 @@
 <p id="notice"><%= notice %></p>
+
+
    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
-     <div class="mr-md-auto logo"></div>
+     <%= link_to articles_path do %>
+       <%= content_tag :div, "", :class => "mr-md-auto logo" %>
+      <% end %>
      <nav class="my-2 my-md-0 mr-md-3">
 
      </nav>
-     <%= link_to 'Retour', articles_path %>
+  <% if user_signed_in? %>
+  <%= link_to new_article_path do %>
+       <%= content_tag :div, "Nouvel article", :class => "btn btn-outline-warning" %>
+      <% end %>
+    <%= link_to destroy_user_session_path, method: :delete do %>
+       <%= content_tag :div, "Déconnexion", :class => "btn btn-outline-danger" %>
+      <% end %>
+
+<% end %>
    </div>
+
    <div class="container">
        <div class="card article">
          <p class="assurances titre">Assurances</p>
@@ -21,8 +34,8 @@
          </div>
          <% if user_signed_in?%>
            <div class="edit">
-         <%= link_to 'Edit', edit_article_path(@article) %>
-         <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, class: 'btn btn-default btn-xs'%>
+         <%= link_to 'Modifier', edit_article_path(@article), :class => "btn btn-secondary", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
+         <%= link_to 'Supprimer', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, :class => "btn btn-danger", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
            </div>
            <% end %>
        </div>

@@ -1,11 +1,35 @@
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
-  <div class="mr-md-auto logo"></div>
-  <nav class="my-2 my-md-0 mr-md-3">
 
-    Bonjour, Gilbert
-  </nav>
-  <%= link_to 'Back', articles_path %>
-</div>
+     <%= link_to articles_path do %>
+      <%= content_tag :div, "", :class => "mr-md-auto logo" %>
+      <% end %>
+     <nav class="my-2 my-md-0 mr-md-3">
+
+     </nav>
+  <% if user_signed_in? %>
+    <%= link_to destroy_user_session_path, method: :delete do %>
+       <%= content_tag :div, "Déconnexion", :class => "btn btn-outline-danger" %>
+      <% end %>
+
+<% end %>
+   </div>
+
+   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
+     <h5 class="my-0 mr-md-auto font-weight-bold" style="font-size:30px;">Catégories</h5>
+     <nav class="my-2 my-md-0 mr-md-3">
+     </nav>
+   </div>
+
+   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
+     <nav class="my-2 my-md-0 mr-md-3">
+     <a class="btn btn-outline-primary logement top-btt" href="#">Logement</a>
+     <a class="btn btn-outline-primary etudes top-btt" href="#">Etudes</a>
+     <a class="btn btn-outline-primary travail top-btt" href="#">Travail</a>
+     <a class="btn btn-outline-primary finances top-btt" href="#">Finances</a>
+     <a class="btn btn-outline-primary quotidien top-btt" href="#">Quotidien</a>
+     <a class="btn btn-outline-primary assurances top-btt" href="#">Assurances</a>
+     </nav>
+   </div>
 
 <div class="container">
     <div class="card article">
