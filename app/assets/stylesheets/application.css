@@ -240,3 +240,19 @@ path{
     background-repeat: no-repeat;
     background-position: right;
 }
+
+@media (min-width: 576px) {
+.card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 3;
+    column-count: 4;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 3rem;
+
+  }
+}
+
+.card-columns .card {
+    margin-bottom: 2rem;
+}
