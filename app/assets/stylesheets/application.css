@@ -243,6 +243,17 @@ path{
 
 @media (min-width: 576px) {
 .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+}
+}
+
+@media (min-width: 976px) {
+.card-columns {
     -webkit-column-count: 4;
     -moz-column-count: 3;
     column-count: 4;
@@ -251,6 +262,8 @@ path{
     column-gap: 3rem;
 
   }
+
+
 }
 
 .card-columns .card {
@@ -270,6 +283,7 @@ body {
 .card-title-article {
     font-size: 30px;
     line-height: 40px;
+    max-width:80%;
 }
 
 .card-body {
