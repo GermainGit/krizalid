@@ -52,11 +52,9 @@
          </div>
          <% if user_signed_in?%>
            <div class="edit">
-         <%= link_to 'Modifier', edit_article_path(@article), {:style=>'color:#FFFFFF;', :class => "btn btn-secondary"} %>
-         <%= link_to 'Supprimer', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, {:style=>'color:#FFFFFF;', :class => "btn btn-danger"} %>
+         <%= link_to 'Modifier', edit_article_path(@article), :class => "btn btn-secondary", :style=>'color:#FFFFFF;' %>
+         <%= link_to 'Supprimer', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, :class => "btn btn-danger", :style=>'color:#FFFFFF;' %>
            </div>
            <% end %>
        </div>
     </div>
-
-
