@@ -3,7 +3,7 @@
      <nav class="my-2 my-md-0 mr-md-3">
 
       <% unless user_signed_in? %>
-       <a href="users/sign_in"><button type="button" class="btn btn-outline-light">Espace utilisateur</button></a>
+       <a href="articles"><button type="button" class="btn btn-outline-light">Retour à l'accueil</button></a>
        <% end %>
      </nav>
   <% if user_signed_in? %>
@@ -38,19 +38,13 @@
      <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
+<form class="form-signin">
+  <label class="sr-only">E-mail</label>
+  <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => "E-mail" %><br>
+  <label class="sr-only">Password</label>
+  <%= f.password_field :password, autocomplete: "off", :placeholder => "Mot de passe" %><br>
+  <%= f.submit "Log in" %>
+  </form>
+  <% end %>
     </div>
     <%= render "devise/shared/links" %>
