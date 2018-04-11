@@ -175,15 +175,20 @@ a:hover {
 .btn-outline-warning {
   margin-right:20px;
 }
+
 .card-title-article {
     color: #434f74;
     font-size: 70px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
     font-weight: bold;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 90px;
 }
-
  .assurances.titre{
   font-size: 25px;
  }
