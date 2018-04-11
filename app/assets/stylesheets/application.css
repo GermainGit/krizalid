@@ -256,3 +256,14 @@ path{
 .card-columns .card {
     margin-bottom: 2rem;
 }
+
+@media (maxwidth: 726px) {
+body {
+    margin:0;
+
+  }
+
+.top-btt {
+  margin-bottom:10px;
+}
+}
