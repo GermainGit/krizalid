@@ -160,6 +160,7 @@ a:hover {
 
  .article {
    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+   margin-top:50px;
  }
 
  .titre {
