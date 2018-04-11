@@ -52,15 +52,13 @@
          </div>
          <% if user_signed_in?%>
            <div class="edit">
-         <%= link_to edit_article_path(@article) %>
-       <%= content_tag :div, "Modifier", :class => "btn btn-secondary" %>
-      <% end %>
-         <%= link_to @article, method: :delete, data: { confirm: 'Etes-vous sur ?' } %>
-       <%= content_tag :div, "Supprimer", :class => "btn btn-danger" %>
-      <% end %>
+         <%= link_to 'Edit', edit_article_path(@article) %>
+         <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, class: 'btn btn-default btn-xs'%>
            </div>
            <% end %>
        </div>
     </div>
+
+
 
 
