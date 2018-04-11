@@ -257,7 +257,7 @@ path{
     margin-bottom: 2rem;
 }
 
-@media (maxwidth: 726px) {
+@media (max-width: 726px) {
 body {
     margin:0;
 
