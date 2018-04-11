@@ -76,6 +76,8 @@ a:hover {
 
 .card-body p {
   color: #434f74!important;
+  font-size:17px;
+  font-family:Muli;
 }
  .btn-outline-primary {
  border:none;
@@ -163,6 +165,10 @@ a:hover {
  .article {
    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
    margin-top:50px;
+ }
+
+ .body-article {
+  padding:0 5rem 5rem 5rem;
  }
 
  .titre {
