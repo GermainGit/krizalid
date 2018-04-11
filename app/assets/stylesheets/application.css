@@ -147,7 +147,6 @@ a:hover {
  .logo {
    background-image: url(https://i.imgur.com/BzeLkyp.png);
    background-repeat: no-repeat;
-   background-size: cover;
    width:431px;
    height:165px;
    transition:0.3s;
