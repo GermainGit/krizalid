@@ -79,6 +79,13 @@ a:hover {
   font-size:17px;
   font-family:Muli;
 }
+
+.body-article img {
+  border: solid #ebebeb 10px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
  .btn-outline-primary {
  border:none;
  padding:15px;
