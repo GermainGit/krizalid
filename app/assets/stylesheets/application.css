@@ -266,4 +266,18 @@ body {
 .top-btt {
   margin-bottom:10px;
 }
+
+.card-title-article {
+    font-size: 30px;
+    line-height: none;
+}
+
+.card-body {
+  margin:none;
+}
+
+.card-text-article {
+  margin:30px;
+}
+
 }
