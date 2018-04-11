@@ -31,7 +31,7 @@
          </div>
          <% unless user_signed_in?%>
            <div class="edit">
-         <%= link_to 'Retour', link_to articles_path do, :class => "btn btn-secondary", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
+         <%= link_to 'Retour', link_to articles_path, :class => "btn btn-secondary", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
            </div>
            <% end %>
          <% if user_signed_in?%>
