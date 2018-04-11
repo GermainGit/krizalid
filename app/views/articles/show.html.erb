@@ -1,11 +1,42 @@
 <p id="notice"><%= notice %></p>
+
+
    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
      <div class="mr-md-auto logo"></div>
      <nav class="my-2 my-md-0 mr-md-3">
 
+      <% unless user_signed_in? %>
+       <a href="users/sign_in"><button type="button" class="btn btn-outline-light">Espace utilisateur</button></a>
+       <% end %>
      </nav>
-     <%= link_to 'Retour', articles_path %>
+  <% if user_signed_in? %>
+  <%= link_to new_article_path do %>
+       <%= content_tag :div, "Nouvel article", :class => "btn btn-outline-warning" %>
+      <% end %>
+    <%= link_to destroy_user_session_path, method: :delete do %>
+       <%= content_tag :div, "Déconnexion", :class => "btn btn-outline-danger" %>
+      <% end %>
+
+<% end %>
    </div>
+
+   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
+     <h5 class="my-0 mr-md-auto font-weight-bold" style="font-size:30px;">Catégories</h5>
+     <nav class="my-2 my-md-0 mr-md-3">
+     </nav>
+   </div>
+
+   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
+     <nav class="my-2 my-md-0 mr-md-3">
+     <a class="btn btn-outline-primary logement top-btt" href="#">Logement</a>
+     <a class="btn btn-outline-primary etudes top-btt" href="#">Etudes</a>
+     <a class="btn btn-outline-primary travail top-btt" href="#">Travail</a>
+     <a class="btn btn-outline-primary finances top-btt" href="#">Finances</a>
+     <a class="btn btn-outline-primary quotidien top-btt" href="#">Quotidien</a>
+     <a class="btn btn-outline-primary assurances top-btt" href="#">Assurances</a>
+     </nav>
+   </div>
+
    <div class="container">
        <div class="card article">
          <p class="assurances titre">Assurances</p>
@@ -21,9 +52,15 @@
          </div>
          <% if user_signed_in?%>
            <div class="edit">
-         <%= link_to 'Edit', edit_article_path(@article) %>
-         <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, class: 'btn btn-default btn-xs'%>
+         <%= link_to edit_article_path(@article) %>
+       <%= content_tag :div, "Modifier", :class => "btn btn-secondary" %>
+      <% end %>
+         <%= link_to @article, method: :delete, data: { confirm: 'Etes-vous sur ?' } %>
+       <%= content_tag :div, "Supprimer", :class => "btn btn-danger" %>
+      <% end %>
            </div>
            <% end %>
        </div>
     </div>
+
+
