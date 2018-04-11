@@ -74,7 +74,7 @@ a:hover {
   padding:1.25rem;
  }
 
-.card-body p {
+.body-article p {
   color: #434f74!important;
   font-size:17px;
   font-family:Muli;
@@ -195,7 +195,7 @@ a:hover {
     font-size: 70px;
     margin-bottom: 50px;
     font-weight: bold;
-    max-width: 60%;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -290,7 +290,9 @@ body {
     margin:0;
 
   }
-
+.body-article {
+  padding:10px;
+ }
 .top-btt {
   margin-bottom:15px;
 }
