@@ -56,6 +56,7 @@ a:hover {
  .container {
    max-width: 99%;
    margin-bottom:100px;
+   margin-top:50px;
  }
 
  .pricing-header {
@@ -180,7 +181,7 @@ a:hover {
  }
 
  .titre {
-   border-radius: 25px 25px 0 0;
+   border-radius: .25rem .25rem 0 0;
   color: white;
   font-size: 15px;
   text-align: center;
@@ -213,7 +214,7 @@ a:hover {
   font-size: 18px;
  }
 
- .card-text a, .card-text a:hover, .card-text a:visited {
+.card-text a:visited {
   color:#434F74;
  }
 
