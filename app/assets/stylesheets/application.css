@@ -74,10 +74,6 @@ a:hover {
   padding:1.25rem;
  }
 
- .top-btt:hover {
-  filter:saturate(200%);
- }
-
  .btn-outline-primary {
  border:none;
  padding:15px;
@@ -287,7 +283,7 @@ body {
   }
 
 .top-btt {
-  margin-bottom:10px;
+  margin-bottom:15px;
 }
 
 .card-title-article {
