@@ -6,7 +6,7 @@
      <nav class="my-2 my-md-0 mr-md-3">
 
       <% unless user_signed_in? %>
-       <a href="users/sign_in"><button type="button" class="btn btn-outline-light">Espace utilisateur</button></a>
+       <a href="//krizalid.herokuapp.com/users/sign_in"><button type="button" class="btn btn-outline-light">Espace utilisateur</button></a>
        <% end %>
      </nav>
   <% if user_signed_in? %>
@@ -52,8 +52,8 @@
          </div>
          <% if user_signed_in?%>
            <div class="edit">
-         <%= link_to 'Edit', edit_article_path(@article) %>
-         <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, :class => "btn btn-secondary" %>
+         <%= link_to 'Modifier', edit_article_path(@article), :class => "btn btn-danger" %>
+         <%= link_to 'Supprimer', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, :class => "btn btn-secondary" %>
            </div>
            <% end %>
        </div>
