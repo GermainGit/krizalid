@@ -75,11 +75,7 @@ a:hover {
  }
 
 .card-body p {
-  color: #434f74;
-    font-size: 16px;
-    line-height: 25px;
-    margin: 40px;
-    text-align: justify;
+  color: #434f74!important;
 }
  .btn-outline-primary {
  border:none;
