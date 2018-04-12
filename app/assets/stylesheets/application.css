@@ -193,7 +193,7 @@ a:hover {
  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
  .logo {
-   background-image: url(https://i.imgur.com/HFXsZt8.png);
+   background-image: url(https://krizalid.herokuapp.com/logo.png);
    background-repeat: no-repeat;
    background-size:cover;
    width:241px;
@@ -229,7 +229,11 @@ a:hover {
 }
 
 .card-path:hover {
-  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  -moz-transform: scale(1.03);
 }
 
 .card-title {
