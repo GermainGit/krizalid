@@ -8,7 +8,7 @@
      <nav class="my-2 my-md-0">
       <% @categories.each do |category| %>
       <%= link_to category do %>
-      <a class="btn btn-outline-primary top-btt" style ="background: linear-gradient(to right, <%= category.color_from%>,<%= category.color_to %>);transition: 0.3s;"href="#"><%= category.name %></a>
+      <a class="btn btn-outline-primary top-btt category" style ="background: linear-gradient(to right, <%= category.color_from%>,<%= category.color_to %>);transition: 0.3s;"href="#"><%= category.name %></a>
        <% end %>
     <% end %>
      </nav>
@@ -34,7 +34,7 @@
            <p class="card-text"><%= article.excerpt %></p>
          </div>
          <%= link_to article do %>
-       <p class="lecture" style ="background: linear-gradient(to right, <%= article.category.color_from%>,<%= article.category.color_to%>)"%>Lire ➔</p>
+       <p class="lecture category" style ="background: linear-gradient(to right, <%= article.category.color_from%>,<%= article.category.color_to%>)"%>Lire ⇾</p>
       <% end %>
        </div>
        <% end %>
