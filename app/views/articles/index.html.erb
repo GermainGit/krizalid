@@ -11,9 +11,6 @@
       <a class="btn btn-outline-primary top-btt" style ="background: linear-gradient(to right, <%= category.color_from%>,<%= category.color_to %>);transition: 0.3s;"href="#"><%= category.name %></a>
        <% end %>
     <% end %>
-
-     <a class="btn btn-outline-primary etudes top-btt" href="#">Etudes</a>
-
      </nav>
   <% if user_signed_in? %>
   <%= link_to new_article_path do %>
