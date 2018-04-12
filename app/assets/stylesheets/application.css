@@ -113,7 +113,7 @@ a:hover {
  }
 
  .btn-outline-primary:hover {
-  background-color:white;
+  background-color:#404a70;
  }
 
  .assurances {
@@ -171,6 +171,14 @@ a:hover {
    filter:saturate(200%);transition:0.3s;
  }
 
+.category {
+  transition:0.3s;
+}
+
+.category:hover {
+  filter:saturate(200%);transition:0.3s;
+}
+
  .lecture {
  padding: 20px;
  border-radius: 0 0 .75rem .75rem;
@@ -218,6 +226,10 @@ a:hover {
 
 .btn-outline-warning {
   margin-right:20px;
+}
+
+.card-path:hover {
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
 }
 
 .card-title {
