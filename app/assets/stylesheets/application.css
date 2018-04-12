@@ -226,9 +226,12 @@ a:hover {
 .btn-outline-warning {
   margin-right:20px;
 }
-
+.card-path {
+  transition:0.3s;
+}
 .card-path:hover {
 opacity:0.8;
+transition:0.3s;
 }
 
 .card-title {
