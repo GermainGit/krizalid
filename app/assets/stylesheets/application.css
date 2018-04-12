@@ -113,8 +113,7 @@ a:hover {
  }
 
  .btn-outline-primary:hover {
-  background-color:none;
-  filter:saturate(200%);
+  background-color:white;
  }
 
  .assurances {
