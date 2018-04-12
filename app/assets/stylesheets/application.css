@@ -85,6 +85,15 @@ a:hover {
   padding:1.25rem;
  }
 
+ .card-body p {
+  font-size:14px;
+  font-family:Muli;
+ }
+
+ .card-body h5 {
+  font-family:Muli;
+ }
+
 .body-article p {
   color: #434f74!important;
   font-size:17px;
@@ -92,9 +101,9 @@ a:hover {
 }
 
 .body-article img {
-  border: solid #ebebeb 10px;
-    border-radius: 10px;
-    max-width: 500px;
+ margin: 10px;
+ border-radius: 10px;
+ max-width: 100%;
 }
 
  .btn-outline-primary {
@@ -319,6 +328,13 @@ body {
   margin-bottom:15px;
   margin-left:0px;
   margin-left:15px;
+}
+.btn-outline-warning {
+  margin-right:0px;
+  margin-bottom:20px;
+}
+.my-2 {
+  margin-top:50px!important;
 }
 }
 
