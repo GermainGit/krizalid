@@ -195,7 +195,6 @@ a:hover {
  .logo {
    background-image: url(https://krizalid.herokuapp.com/logo.png);
    background-repeat: no-repeat;
-   background-size:cover;
    width:241px;
    height:90px;
  }
@@ -229,11 +228,7 @@ a:hover {
 }
 
 .card-path:hover {
-  transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -webkit-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  -moz-transform: scale(1.03);
+opacity:0.8;
 }
 
 .card-title {
