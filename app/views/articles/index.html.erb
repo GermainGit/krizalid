@@ -34,10 +34,11 @@
            <p class="card-text"><%= article.excerpt %></p>
          </div>
          <%= link_to article do %>
-       <%= content_tag :p, "Lire ⇾", :class => "travail lecture" %>
+       <%= content_tag :p, "Lire ⇾", :class => "lecture", :style => "background : linear-gradient(to right, <%= @article.category.color_from%>, <%= @article.category.color_to%>);" %>
       <% end %>
        </div>
        <% end %>
     <% end %>
     </div>
     </div>
+
