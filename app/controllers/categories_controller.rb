@@ -1,6 +1,5 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, only: [:edit, :update, :destroy]
+  before_action :authenticate_user!,:set_category, only: [:show, :edit, :update, :destroy]
 
 
   # GET /categories
@@ -16,7 +15,9 @@ class CategoriesController < ApplicationController
 
   # GET /categories/new
   def new
+    if user_signed_in?
     @category = Category.new
+    end
   end
 
   # GET /categories/1/edit
@@ -26,6 +27,7 @@ class CategoriesController < ApplicationController
   # POST /categories
   # POST /categories.json
   def create
+    if user_signed_in?
     @category = Category.new(category_params)
 
     respond_to do |format|
@@ -37,6 +39,7 @@ class CategoriesController < ApplicationController
         format.json { render json: @category.errors, status: :unprocessable_entity }
       end
     end
+  end
   end
 
   # PATCH/PUT /categories/1
