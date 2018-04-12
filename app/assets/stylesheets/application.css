@@ -110,7 +110,11 @@ a:hover {
  border:none;
  padding:15px;
  text-transform: uppercase;
- margin-right:10px;
+ }
+
+ .btn-outline-primary:hover {
+  background-color:none;
+  filter:saturate(200%);
  }
 
  .assurances {
@@ -219,6 +223,7 @@ a:hover {
 
 .card-title {
   font-weight:bold;
+  font-size:1.35rem;
 }
 
 .card-title-article {
@@ -313,7 +318,7 @@ path{
 }
 
 .card-columns .card {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 @media (max-width: 726px) {
