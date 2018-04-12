@@ -33,14 +33,23 @@
    }
  }
 
+a {
+  color:#434F74;
+}
+
+a:visited {
+  color:#434F74;
+}
+
 a:hover {
-  color:black;
+  color:#434F74;;
   text-decoration:none;
   background:none;
 }
 
  .topbar {
    color:#fff;
+   justify-content: space-between;
  }
 
  .topbar a {
@@ -55,6 +64,7 @@ a:hover {
  .container {
    max-width: 99%;
    margin-bottom:100px;
+   margin-top:50px;
  }
 
  .pricing-header {
@@ -65,13 +75,23 @@ a:hover {
    min-width: 220px;
  }
 
+
  .card {
    border:none;
-   border-radius:25px;
+   border-radius:.75rem;
  }
 
  .card-body {
   padding:1.25rem;
+ }
+
+ .card-body p {
+  font-size:14px;
+  font-family:Muli;
+ }
+
+ .card-body h5 {
+  font-family:Muli;
  }
 
 .body-article p {
@@ -81,16 +101,19 @@ a:hover {
 }
 
 .body-article img {
-  border: solid #ebebeb 10px;
-    border-radius: 10px;
-    max-width: 500px;
+ margin: 10px;
+ border-radius: 10px;
+ max-width: 100%;
 }
 
  .btn-outline-primary {
  border:none;
  padding:15px;
  text-transform: uppercase;
- margin-right:10px;
+ }
+
+ .btn-outline-primary:hover {
+  background-color:#404a70;
  }
 
  .assurances {
@@ -148,9 +171,17 @@ a:hover {
    filter:saturate(200%);transition:0.3s;
  }
 
+.category {
+  transition:0.3s;
+}
+
+.category:hover {
+  filter:saturate(200%);transition:0.3s;
+}
+
  .lecture {
  padding: 20px;
- border-radius: 0 0 25px 25px;
+ border-radius: 0 0 .75rem .75rem;
  color: white;
  font-size: 1.5em;
  font-family: Muli;
@@ -179,7 +210,7 @@ a:hover {
  }
 
  .titre {
-   border-radius: 25px 25px 0 0;
+   border-radius: .25rem .25rem 0 0;
   color: white;
   font-size: 15px;
   text-align: center;
@@ -195,6 +226,15 @@ a:hover {
 
 .btn-outline-warning {
   margin-right:20px;
+}
+
+.card-path:hover {
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+}
+
+.card-title {
+  font-weight:bold;
+  font-size:1.35rem;
 }
 
 .card-title-article {
@@ -259,7 +299,7 @@ path{
 
 .top-btt {
   padding: 10px;
-  margin-right: 15px;
+  margin-left: 15px;
 }
 
 
@@ -289,7 +329,7 @@ path{
 }
 
 .card-columns .card {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 @media (max-width: 726px) {
@@ -302,6 +342,16 @@ body {
  }
 .top-btt {
   margin-bottom:15px;
+  margin-left:0px;
+  margin-left:15px;
+}
+.btn-outline-warning {
+  margin-right:0px;
+  margin-bottom:20px;
+}
+.my-2 {
+  margin-top:50px!important;
+}
 }
 
 .card-title-article {
@@ -318,4 +368,4 @@ body {
   margin:10px;
 }
 
-}
+
