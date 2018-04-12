@@ -208,6 +208,10 @@ a:hover {
   margin-right:20px;
 }
 
+.card-title {
+  font-weight:bold;
+}
+
 .card-title-article {
     color: #434f74;
     font-size: 70px;
