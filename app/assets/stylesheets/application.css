@@ -75,22 +75,10 @@ a:hover {
    min-width: 220px;
  }
 
- .card-deck .card-path {
-   min-width: 220px;
- }
 
  .card {
    border:none;
    border-radius:.25rem;
- }
-
- .card-path {
-   border:none;
-   border-radius:.25rem;
- }
-
- .card-path:hover {
-   box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
  }
 
  .card-body {
