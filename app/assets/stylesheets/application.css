@@ -18,6 +18,12 @@
    font-size: 14px;
  }
 
+ h1 {
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+ }
+
  body {
    background-color: #2B3351;
    font-family:Muli;
