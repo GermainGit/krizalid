@@ -30,9 +30,9 @@
            <p class="card-text-article"><%= @article.text.html_safe %></p>
          </div>
          <% unless user_signed_in?%>
-           <div class="edit">
-         <%= link_to 'Retour', articles_path, :class => "btn btn-outline-dark", :style=>'margin-bottom:15px;' %>
-           </div>
+           <center><div class="edit">
+         <%= link_to 'Retour', articles_path, :class => "btn btn-outline-dark", :style=>'margin:50px;' %>
+           </div></center>
            <% end %>
          <% if user_signed_in?%>
            <div class="edit">
