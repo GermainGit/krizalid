@@ -1,24 +1,5 @@
-   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
-     <div class="mr-md-auto logo"></div>
-     <nav class="my-2 my-md-0 mr-md-3">
 
-      <% unless user_signed_in? %>
-       <a href="//krizalid.herokuapp.com"><button type="button" class="btn btn-outline-light">Retour à l'accueil</button></a>
-       <% end %>
-     </nav>
-  <% if user_signed_in? %>
-  <%= link_to new_article_path do %>
-       <%= content_tag :div, "Nouvel article", :class => "btn btn-outline-warning" %>
-      <% end %>
-    <%= link_to destroy_user_session_path, method: :delete do %>
-       <%= content_tag :div, "Déconnexion", :class => "btn btn-outline-danger" %>
-      <% end %>
-
-<% end %>
-   </div>
-
-   <div class="container">
-     <h2 style="color:white;">Log in</h2>
+     <h1>Log in</h1>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 <form class="form-signin">
@@ -29,5 +10,4 @@
   <%= f.submit "Log in" %>
   </form>
   <% end %>
-    </div>
     <%= render "devise/shared/links" %>

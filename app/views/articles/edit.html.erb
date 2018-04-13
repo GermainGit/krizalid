@@ -1,23 +1,6 @@
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
-     <%= link_to articles_path do %>
-       <%= content_tag :div, "", :class => "mr-md-auto logo" %>
-      <% end %>
-     <nav class="my-2 my-md-0 mr-md-3">
-
-     </nav>
-  <% if user_signed_in? %>
-    <%= link_to destroy_user_session_path, method: :delete do %>
-       <%= content_tag :div, "Déconnexion", :class => "btn btn-outline-danger" %>
-      <% end %>
-
-<% end %>
-   </div>
-
-<div class="container">
     <div class="card article">
       <p class="etudes titre">Modifier un article</p>
       <div class="card-body">
         <%= render 'form', article: @article %>
       </div>
     </div>
- </div>
