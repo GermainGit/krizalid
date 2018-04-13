@@ -111,6 +111,10 @@ a:hover {
   font-family:Muli;
 }
 
+.body-article li {
+  color: #434f74!important;
+}
+
 .body-article img {
  margin: 10px;
  max-width: 100%;
@@ -279,7 +283,7 @@ transition:0.3s;
 .card-text-article {
     color: #434f74;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 35px;
     margin: 40px;
     text-align: justify;
 }
@@ -354,6 +358,7 @@ body {
  }
  .body-article p {
   font-size:15px;
+  padding:5px;
  }
 .top-btt {
   margin-bottom:15px;
