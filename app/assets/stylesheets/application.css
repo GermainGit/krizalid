@@ -104,6 +104,7 @@ a:hover {
   color: #434f74!important;
   font-size:17px;
   font-family:Muli;
+  line-height: 35px;
 }
 
 .body-article span {
@@ -359,6 +360,7 @@ body {
  .body-article p {
   font-size:15px;
   padding:5px;
+  line-height: 25px;
  }
 .top-btt {
   margin-bottom:15px;
@@ -389,6 +391,7 @@ body {
 }
 .card-text-excerpt {
   text-align:justify;
+  margin:0px;
 }
 .card-text-article li {
   margin-left:0pt;
