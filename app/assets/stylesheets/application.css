@@ -67,6 +67,12 @@ a:hover {
    margin-top:50px;
  }
 
+  .container-article {
+   max-width: 99%;
+   margin-bottom:100px;
+   margin-top:50px;
+ }
+
  .pricing-header {
    max-width: 700px;
  }
@@ -341,6 +347,10 @@ body {
 .body-article {
   padding:10px;
  }
+ .body-article p {
+  font-size:15px;
+  padding:10px;
+ }
 .top-btt {
   margin-bottom:15px;
   margin-left:0px;
@@ -354,12 +364,16 @@ body {
   margin-top:50px!important;
 }
 .cross {
-  margin-top:20px;
-  margin-right:0px;
-  background-position:center;
+  height:25px;
+  margin-bottom:25px;
 }
 .container {
   width:100%;
+}
+.container-article {
+  width:100%;
+  padding-left:0px;
+  padding-right:0px;
 }
 .mobile-container {
   margin-top:-90px;
