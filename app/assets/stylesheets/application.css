@@ -353,6 +353,20 @@ body {
 .my-2 {
   margin-top:50px!important;
 }
+.cross {
+  margin-top:20px;
+  margin-right:0px;
+  background-position:center;
+}
+.container {
+  width:100%;
+}
+.mobile-container {
+  margin-top:-90px;
+}
+.card-text-article li {
+  margin-left:0pt;
+}
 }
 
 .card-title-article {

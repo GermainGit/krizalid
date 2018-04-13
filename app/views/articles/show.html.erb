@@ -19,7 +19,7 @@
 <% end %>
    </div>
 
-   <div class="container">
+   <div class="container mobile-container">
        <div class="card article">
          <p class="titre" style="background : linear-gradient(to right, <%= @article.category.color_from%>, <%= @article.category.color_to%>);"><%=@article.category %></p>
          <a href="//krizalid.herokuapp.com/articles"><div class="cross"></div></a>
@@ -31,12 +31,12 @@
          </div>
          <% unless user_signed_in?%>
            <div class="edit">
-         <%= link_to 'Retour', articles_path, :class => "btn btn-outline-dark", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
+         <%= link_to 'Retour', articles_path, :class => "btn btn-outline-dark", :style=>'margin-bottom:15px;' %>
            </div>
            <% end %>
          <% if user_signed_in?%>
            <div class="edit">
-         <%= link_to 'Modifier', edit_article_path(@article), :class => "btn btn-secondary", :style=>'margin-bottom:15px;' %>
+         <%= link_to 'Modifier', edit_article_path(@article), :class => "btn btn-secondary", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
          <%= link_to 'Supprimer', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, :class => "btn btn-danger", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
            </div>
            <% end %>
