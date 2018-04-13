@@ -1,44 +1,24 @@
-<p id="notice"><%= notice %></p>
-
-
-   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 topbar">
-     <%= link_to articles_path do %>
-       <%= content_tag :div, "", :class => "mr-md-auto logo" %>
-      <% end %>
-     <nav class="my-2 my-md-0 mr-md-3">
-
-     </nav>
-  <% if user_signed_in? %>
-  <%= link_to new_article_path do %>
-       <%= content_tag :div, "Nouvel article", :class => "btn btn-outline-warning" %>
-      <% end %>
-    <%= link_to destroy_user_session_path, method: :delete do %>
-       <%= content_tag :div, "Déconnexion", :class => "btn btn-outline-danger" %>
-      <% end %>
-
-<% end %>
+<div class="card article">
+  <p class="titre" style="background : linear-gradient(to right, <%= @article.category.color_from%>, <%= @article.category.color_to%>);"><%=@article.category %></p>
+  <%= link_to articles_path do %>
+    <div class="cross"></div>
+  <% end %>
+  <div class="card-body body-article">
+    <h5 class="card-title-article"><%= @article.name %></h5>
+    <p class="card-text-excerpt"><%= @article.excerpt %></p>
+    <p class="card-text-article"><%= @article.text.html_safe %></p>
+  </div>
+  <% unless user_signed_in?%>
+    <center>
+      <div class="edit">
+        <%= link_to 'Retour', articles_path, :class => "btn btn-outline-dark", :style=>'margin:50px;' %>
+      </div>
+    </center>
+  <% end %>
+  <% if user_signed_in?%>
+    <div class="edit">
+      <%= link_to 'Modifier', edit_article_path(@article), :class => "btn btn-secondary", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
+      <%= link_to 'Supprimer', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, :class => "btn btn-danger", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
    </div>
-
-   <div class="container-article mobile-container">
-       <div class="card article">
-         <p class="titre" style="background : linear-gradient(to right, <%= @article.category.color_from%>, <%= @article.category.color_to%>);"><%=@article.category %></p>
-         <a href="//krizalid.herokuapp.com/articles"><div class="cross"></div></a>
-         <div class="card-body body-article">
-
-           <h5 class="card-title-article"><%= @article.name %></h5>
-           <p class="card-text-excerpt"><%= @article.excerpt %></p>
-           <p class="card-text-article"><%= @article.text.html_safe %></p>
-         </div>
-         <% unless user_signed_in?%>
-           <center><div class="edit">
-         <%= link_to 'Retour', articles_path, :class => "btn btn-outline-dark", :style=>'margin:50px;' %>
-           </div></center>
-           <% end %>
-         <% if user_signed_in?%>
-           <div class="edit">
-         <%= link_to 'Modifier', edit_article_path(@article), :class => "btn btn-secondary", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
-         <%= link_to 'Supprimer', @article, method: :delete, data: { confirm: 'Etes-vous sur ?' }, :class => "btn btn-danger", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
-           </div>
-           <% end %>
-       </div>
-    </div>
+  <% end %>
+</div>

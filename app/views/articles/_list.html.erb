@@ -1,0 +1,15 @@
+<div class="card-columns">
+  <% @articles.each do |article| %>
+    <%= link_to article do %>
+      <div class="card card-path">
+        <div class="card-body">
+          <h5 class="card-title"><%= article.name %></h5>
+          <p class="card-text"><%= article.excerpt %></p>
+        </div>
+        <%= link_to article do %>
+          <p class="lecture category" style ="background: linear-gradient(to right, <%= article.category.color_from%>,<%= article.category.color_to%>)"%>Lire ⇾</p>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
