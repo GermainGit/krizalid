@@ -220,7 +220,7 @@ a:hover {
  }
 
  .body-article {
-  padding:0 10rem 10rem 10rem;
+  padding:0 10rem 0rem 10rem;
  }
 
  .titre {
@@ -380,6 +380,7 @@ body {
 }
 .container {
   width:100%;
+  margin-top:0px;
 }
 .container-article {
   width:100%;
