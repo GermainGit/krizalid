@@ -31,10 +31,8 @@
          </div>
          <% unless user_signed_in?%>
            <div class="edit">
-         <% @categories.each do |category| %>
       <%= link_to articles_path do %>
       <a class="btn btn-outline-primary top-btt category" style ="background: linear-gradient(to right, <%= category.color_from%>,<%= category.color_to %>);transition: 0.3s;"href="#">Retour</a>
-       <% end %>
     <% end %>
            </div>
            <% end %>
