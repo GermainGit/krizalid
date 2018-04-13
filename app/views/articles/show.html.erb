@@ -31,7 +31,11 @@
          </div>
          <% unless user_signed_in?%>
            <div class="edit">
-         <%= link_to 'Retour', articles_path, :class => "btn btn-secondary", :style=>'color:#FFFFFF;margin-bottom:15px;' %>
+         <% @categories.each do |category| %>
+      <%= link_to articles_path do %>
+      <a class="btn btn-outline-primary top-btt category" style ="background: linear-gradient(to right, <%= category.color_from%>,<%= category.color_to %>);transition: 0.3s;"href="#">Retour</a>
+       <% end %>
+    <% end %>
            </div>
            <% end %>
          <% if user_signed_in?%>

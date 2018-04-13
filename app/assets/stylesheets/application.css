@@ -102,7 +102,6 @@ a:hover {
 
 .body-article img {
  margin: 10px;
- border-radius: 10px;
  max-width: 100%;
 }
 
@@ -205,11 +204,11 @@ a:hover {
  }
 
  .body-article {
-  padding:0 5rem 5rem 5rem;
+  padding:0 10rem 10rem 10rem;
  }
 
  .titre {
-   border-radius: .25rem .25rem 0 0;
+   border-radius: .75rem .75rem 0 0;
   color: white;
   font-size: 15px;
   text-align: center;
